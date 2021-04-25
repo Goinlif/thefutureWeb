@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+       <div id="main">
+        <h2>live server</h2>
+        <div class="aside">
+            <div class="num">
+                <input type="text" placeholder="Email-address">
+                <button>Subscribe</button>
+            </div>
+            <div class="right">
+                <a href="#">Contact</a>
+                <a href="#">Help</a>
+                <a href="./newfolio.html">Admission</a>
+                <a href="./newfolio.html">Portfolio</a>
+                <a class="cart" href="#">Your cart</a>
+            </div>
+            <div class="burger" onclick="openNav()">&#9776;menu
+            </div>
+        </div>
+
+
+        <div class="sidenav" id="mySidenav">
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <a href="#">Admission</a>
+            <a href="#">Portfolio</a>
+            <a class="cart" href="#">Your cart</a>
+        </div>
+        
+        <div class="product">
+            <div class="pro">
+                <img src="./img/img 1.jpg" alt="product">
+                <h3>product 1 is available for now</h3>
+                <button>add to cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/img 1.jpg" alt="product">
+                <h3>product 1 is available for now</h3>
+                <button>add to cart</button>
+            </div>
+            <div class="pro">
+                <img src="./img/img 1.jpg" alt="product">
+                <h3>product 1 is available for now</h3>
+                <button>add to cart</button>
+            </div>
+        </div>
+       </div>
+    </header>
+
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
+</body>
+</html>
